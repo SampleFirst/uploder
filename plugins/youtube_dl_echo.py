@@ -206,7 +206,7 @@ async def echo(bot, message):
             text=Translation.FORMAT_SELECTION + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
-            reply_to_message_id=message.message_id
+            quote=True
         )
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
@@ -228,6 +228,6 @@ async def echo(bot, message):
             text=Translation.FORMAT_SELECTION,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
-            reply_to_message_id=message.message_id
+            quote=True
         )
         
