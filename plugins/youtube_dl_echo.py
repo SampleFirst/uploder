@@ -201,7 +201,7 @@ async def echo(bot, message):
             )
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await imog.delete(True)
-        await bot.send_message(
+        await message.reply_text(
             chat_id=message.chat.id,
             text=Translation.FORMAT_SELECTION + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
@@ -223,7 +223,7 @@ async def echo(bot, message):
         )
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await imog.delete(True)
-        await bot.send_message(
+        await message.reply_text(
             chat_id=message.chat.id,
             text=Translation.FORMAT_SELECTION,
             reply_markup=reply_markup,
