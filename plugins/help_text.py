@@ -20,7 +20,6 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         parse_mode=enums.ParseMode.HTML,
         disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
     )
 
 
@@ -42,6 +41,5 @@ async def start(bot, update):
                 ],
             ]
         ),
-        reply_to_message_id=update.message_id
     )
     
